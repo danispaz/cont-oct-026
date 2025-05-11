@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Produto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+    .tab {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+    .tab.active {
+      border-bottom: 3px solid #0078d4;
+      color: #0078d4;
+    }
+    .tab i {
+      color: inherit;
+      transition: color 0.3s;
+    }
+    .tab-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: #505050;
+    }
+    .form-value {
+      background: #f1f3f4;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #2d2d2d;
+    }
+    .icon {
+      font-size: 12px;
+      color: #605e5c;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .styled-table thead {
+      background-color: #57c1b2;
+      color: white;
+      text-align: left;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+    .styled-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('identificacao')"><i class="fas fa-id-badge icon"></i>Identificação</button>
+    <button class="tab" onclick="showTab('escopo')"><i class="fas fa-list icon"></i>Escopo</button>
+    <button class="tab" onclick="showTab('estrategia')"><i class="fas fa-bullseye icon"></i>Estratégia</button>
+    <button class="tab" onclick="showTab('qualificacao')"><i class="fas fa-check-circle icon"></i>Qualificação</button>
+  </div>
+
+  <div id="identificacao" class="tab-content active">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-box icon"></i>Nome do Produto</label>
+      <div class="form-value">Implantação Contábil Tributário (CT)
+
+
+
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-align-left icon"></i>Descrição do Produto</label>
+      <p class="form-value">
+Etapa inicial antes do início da contabilidade recorrente, realizada para alinhar processos, escopo, obrigações e estrutura fiscal e contábil do cliente. Inclui o mapeamento da operação atual, análise da contabilidade anterior, revisão de cadastros, parametrização do sistema e definição dos fluxos de trabalho. Garante uma transição segura, reduz riscos operacionais e assegura que a contabilidade comece estruturada e alinhada com as necessidades do negócio.
+
+
+      </p>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-barcode icon"></i>Código</label>
+      <div class="form-value">OCT026</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-sitemap icon"></i>Área</label>
+      <div class="form-value">Contabilidade</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-question-circle icon"></i>Classificação BCG</label>
+      <div class="form-value">Ponto de Interrogação</div>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="escopo" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-file-alt icon"></i>Escopo</label>
+      <div class="form-value">
+<ol data-start="115" data-end="922">
+<li data-start="115" data-end="257" class="">
+<p data-start="118" data-end="257" class=""><strong data-start="118" data-end="142">Diagnóstico Inicial:</strong> Mapeamento da operação atual do cliente, incluindo estrutura organizacional e processos contábeis e tributários.</p>
+</li>
+<li data-start="258" data-end="398" class="">
+<p data-start="261" data-end="398" class=""><strong data-start="261" data-end="299">Análise da Contabilidade Anterior:</strong> Revisão dos registros contábeis e fiscais dos últimos períodos para identificar inconsistências.</p>
+</li>
+<li data-start="399" data-end="525" class="">
+<p data-start="402" data-end="525" class=""><strong data-start="402" data-end="427">Revisão de Cadastros:</strong> Verificação e atualização dos cadastros de clientes, fornecedores, produtos e contas contábeis.</p>
+</li>
+<li data-start="526" data-end="645" class="">
+<p data-start="529" data-end="645" class=""><strong data-start="529" data-end="559">Parametrização do Sistema:</strong> Configuração do sistema contábil e fiscal de acordo com as necessidades do cliente.</p>
+</li>
+<li data-start="646" data-end="776" class="">
+<p data-start="649" data-end="776" class=""><strong data-start="649" data-end="685">Definição de Fluxos de Trabalho:</strong> Estabelecimento de procedimentos operacionais e rotinas de fechamento contábil e fiscal.</p>
+</li>
+<li data-start="777" data-end="922" class="">
+<p data-start="780" data-end="922" class=""><strong data-start="780" data-end="809">Treinamento e Orientação:</strong> Capacitação da equipe do cliente para garantir o entendimento e uso adequado do sistema e processos definidos.</p>
+</li>
+</ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-list-check icon"></i>Problemas que Resolve
+      </label>
+      <div class="form-value">
+<ul data-start="1025" data-end="1379">
+<li data-start="1025" data-end="1109" class="">
+<p data-start="1027" data-end="1109" class="">Erros no preenchimento do IRPF e ITR, que podem gerar multas e bloqueios no CPF.</p>
+</li>
+<li data-start="1110" data-end="1171" class="">
+<p data-start="1112" data-end="1171" class="">Inconsistências na declaração que podem gerar malha fina.</p>
+</li>
+<li data-start="1172" data-end="1233" class="">
+<p data-start="1174" data-end="1233" class="">Desorganização e perda de documentos fiscais importantes.</p>
+</li>
+<li data-start="1234" data-end="1316" class="">
+<p data-start="1236" data-end="1316" class="">Falta de conhecimento para aproveitar corretamente deduções e isenções legais.</p>
+</li>
+<li data-start="1317" data-end="1379" class="">
+<p data-start="1319" data-end="1379" class="">Multas e cobranças indevidas relacionadas ao imóvel rural.</p>
+</li>
+</ul>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="	fas fa-trophy icon"></i>Benefícios
+      </label>
+      <div class="form-value">
+<ul data-start="1291" data-end="1561">
+<li data-start="1291" data-end="1358" class="">
+<p data-start="1293" data-end="1358" class="">Transição segura para uma contabilidade estruturada e alinhada.</p>
+</li>
+<li data-start="1359" data-end="1401" class="">
+<p data-start="1361" data-end="1401" class="">Redução de riscos fiscais e contábeis.</p>
+</li>
+<li data-start="1402" data-end="1456" class="">
+<p data-start="1404" data-end="1456" class="">Eficiência operacional com processos padronizados.</p>
+</li>
+<li data-start="1457" data-end="1512" class="">
+<p data-start="1459" data-end="1512" class="">Segurança jurídica e conformidade com a legislação.</p>
+</li>
+<li data-start="1513" data-end="1561" class="">
+<p data-start="1515" data-end="1561" class="">Melhoria na gestão financeira e patrimonial.</p>
+</li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="estrategia" class="tab-content">
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-fire icon"></i>Prioridade de Venda</label>
+        <div class="form-value">Média</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-lightbulb icon"></i>Quando Ofertar</label>
+      <div class="form-value">
+<ul data-start="1593" data-end="1904">
+<li data-start="1593" data-end="1657" class="">
+<p data-start="1595" data-end="1657" class="">Ao iniciar um contrato de contabilidade com um novo cliente.</p>
+</li>
+<li data-start="1658" data-end="1725" class="">
+<p data-start="1660" data-end="1725" class="">Quando o cliente apresenta inconsistências contábeis e fiscais.</p>
+</li>
+<li data-start="1726" data-end="1775" class="">
+<p data-start="1728" data-end="1775" class="">Antes de iniciar o BPO Contábil e Tributário.</p>
+</li>
+<li data-start="1776" data-end="1851" class="">
+<p data-start="1778" data-end="1851" class="">Quando o cliente deseja reorganizar seus processos contábeis e fiscais.</p>
+</li>
+<li data-start="1852" data-end="1904" class="">
+<p data-start="1854" data-end="1904" class="">Após fusão, cisão ou reestruturação empresarial.</p>
+</li>
+</ul>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-gem icon"></i>Proposta de Valor</label>
+      <div class="form-value">Garantimos uma transição segura e estruturada para a contabilidade, com processos padronizados, parametrização correta do sistema e alinhamento às exigências fiscais e contábeis, minimizando riscos e otimizando a gestão financeira da empresa.
+
+
+
+
+
+    </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-shopping-basket icon"></i>Cross-selling</label>
+      <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Produto Complementar</th>
+            <th>Justificativa da Conexão</th>
+            <th>Área</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>BPO Contábil e Tributário - Indústria e Comércio</td>
+            <td>Continuidade dos processos contábeis após a implantação.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Revisão de Grade Tributária</td>
+            <td>Verificação da correta aplicação dos tributos nos produtos e serviços.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Consultoria e Assessoria Contábil / Tributária</td>
+            <td>Suporte contínuo para dúvidas e orientações fiscais.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Planejamento Tributário</td>
+            <td>Otimização da carga tributária e utilização de benefícios fiscais.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Recomposição Contábil e Tributária</td>
+            <td>Correção de registros contábeis e fiscais anteriores.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Parametrização Contábil/Tributária Sistema Operacional</td>
+            <td>Configuração técnica para integração com o sistema de gestão.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Compliance Tributário</td>
+            <td>Verificação de conformidade fiscal para evitar penalidades.</td>
+            <td>Gestão Tributária</td>
+        </tr>
+        <tr>
+            <td>Planejamento Sucessório e Patrimonial</td>
+            <td>Organização e proteção do patrimônio empresarial.</td>
+            <td>Jurídico</td>
+        </tr>
+        <tr>
+            <td>Gestão de Resultados Financeiros</td>
+            <td>Monitoramento e controle financeiro contínuo.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Captação e Renegociação de Recursos</td>
+            <td>Suporte financeiro para empresas em crescimento.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Auditoria Contábil e Fiscal</td>
+            <td>Validação técnica dos processos contábeis e fiscais.</td>
+            <td>Auditoria</td>
+        </tr>
+        <tr>
+            <td>Avaliação de Maturidade de Gestão</td>
+            <td>Análise da organização e gestão financeira.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+    </tbody>
+</table>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="qualificacao" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-briefcase icon"></i>Regime Tributário Atendimento</label>
+      <div class="form-value">Lucro Real, Lucro Presumido. </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-sync-alt icon"></i>Tipo de Cobrança</label>
+        <div class="form-value">Pontual</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-globe icon"></i>Abrangência Geográfica</label>
+      <div class="form-value">Nacional</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class=" fas fa-file-invoice-dollar icon"></i>Faturamento Ideal</label>
+        <div class="form-value">Pessoas físicas com patrimônio superior a R$ 300 mil.</div>
+      </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-paperclip icon"></i>Documentos Solicitados</label>
+        <div class="form-value">
+<ol data-start="4257" data-end="4526">
+<li data-start="4257" data-end="4322" class="">
+<p data-start="4260" data-end="4322" class="">Últimos demonstrativos contábeis (Balancete, Balanço e DRE).</p>
+</li>
+<li data-start="4323" data-end="4359" class="">
+<p data-start="4326" data-end="4359" class="">Certificado digital do cliente.</p>
+</li>
+<li data-start="4360" data-end="4406" class="">
+<p data-start="4363" data-end="4406" class="">Acesso ao sistema operacional do cliente.</p>
+</li>
+<li data-start="4407" data-end="4467" class="">
+<p data-start="4410" data-end="4467" class="">Cadastro completo de clientes, fornecedores e produtos.</p>
+</li>
+<li data-start="4468" data-end="4526" class="">
+<p data-start="4471" data-end="4526" class="">Planilhas e relatórios de controle financeiro atuais.</p>
+</li>
+</ol>     </div>
+        
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Setores ICP</label>
+                <div class="form-value">
+<ul data-start="4556" data-end="4678">
+<li data-start="4556" data-end="4571" class="">
+<p data-start="4558" data-end="4571" class="">Indústrias.</p>
+</li>
+<li data-start="4572" data-end="4608" class="">
+<p data-start="4574" data-end="4608" class="">Comércio Atacadista e Varejista.</p>
+</li>
+<li data-start="4609" data-end="4636" class="">
+<p data-start="4611" data-end="4636" class="">Transporte e Logística.</p>
+</li>
+<li data-start="4637" data-end="4659" class="">
+<p data-start="4639" data-end="4659" class="">Serviços em Geral.</p>
+</li>
+<li data-start="4660" data-end="4678" class="">
+<p data-start="4662" data-end="4678" class="">Agroindústria.</p>
+</li>
+</ul>           </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class="fas fa-exclamation-circle icon"></i>Objeções Mapeadas</label>
+                <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Objeção</th>
+            <th>O que o cliente quer dizer</th>
+            <th>Como contornar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>“Minha contabilidade já está funcionando.”</td>
+            <td>Acredita que não precisa de reestruturação.</td>
+            <td>Explicar que a implantação garante segurança e eficiência.</td>
+        </tr>
+        <tr>
+            <td>“Parece muito trabalhoso.”</td>
+            <td>Preocupação com o tempo e esforço.</td>
+            <td>Reforçar que o processo é conduzido pela consultoria.</td>
+        </tr>
+        <tr>
+            <td>“Não quero mudar o meu sistema atual.”</td>
+            <td>Resistente à mudança.</td>
+            <td>Esclarecer que a parametrização respeita o sistema do cliente.</td>
+        </tr>
+        <tr>
+            <td>“Nunca tive problema com a contabilidade.”</td>
+            <td>Confiança no método atual.</td>
+            <td>Mostrar que o serviço otimiza processos e evita riscos.</td>
+        </tr>
+        <tr>
+            <td>“Não vejo valor em pagar por isso.”</td>
+            <td>Dúvida sobre o retorno.</td>
+            <td>Explicar que o serviço garante segurança e evita problemas futuros.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Personas</label>
+                <div class="form-value">
+                    <ul data-start="107" data-end="257">
+                                               <li data-start="174" data-end="257" class="" style="">
+                        <p data-start="176" data-end="257" class=""><strong data-start="176" data-end="190">Decisores:</strong> Sócios e Proprietários de Empresas.</p>
+                        </li>
+                        </ul> </div>
+              </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-star-half-alt icon"></i>Diferenciais</label>
+      <div class="form-value">A Funcional oferece o serviço de Implantação Contábil e Tributária com excelência técnica, metodologia estruturada e atendimento consultivo, garantindo que o cliente inicie sua contabilidade de forma organizada, segura e alinhada às exigências fiscais.
+
+Nosso diferencial está na análise completa da operação do cliente, mapeamento dos processos atuais, revisão da contabilidade anterior, parametrização do sistema contábil e definição clara dos fluxos de trabalho, assegurando que a contabilidade seja estruturada corretamente desde o início.
+
+Mais do que apenas iniciar a contabilidade, a Funcional oferece clareza, conformidade e eficiência, garantindo que o cliente opere com segurança e controle desde o primeiro mês.
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`.tab[onclick="showTab('${id}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
